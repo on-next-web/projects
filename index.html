@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-color-changer</title>
+  </head>
+  <body>
+    <h1>Background Color Changer</h1>
+    <button id="btn">Red</button>
+    <button id="btn-2">Blue</button>
+    <button id="btn-3">Green</button>
+
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", function onClick(event) {
+        document.body.style.backgroundColor = "Red";
+      });
+      // btn-2
+      const btn_2 = document.getElementById("btn-2");
+      btn_2.addEventListener("click", function onClick(event) {
+        document.body.style.backgroundColor = "Blue";
+      });
+      // btn-3
+      const btn_3 = document.getElementById("btn-3");
+      btn_3.addEventListener("click", function onClick(event) {
+        document.body.style.backgroundColor = "green";
+      });
+    </script>
+  </body>
+</html>
